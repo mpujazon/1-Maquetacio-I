@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{
     --clr-white: #FFF;
     --clr-black: #000;
@@ -20,8 +22,32 @@
     --spacing-1500: 7.5rem;
 }
 
+/*General Styles and CSS Reset*/
 *, body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: var(--clr-white);
+    font-family: "Rubik", sans-serif;
+    padding: 0 var(--spacing-400);
+}
+
+.hidden{
+    display: none;
+}
+
+/*Header Styles*/
+.header-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-500) 0;
+}
+
+.header .hamburger-icon{
+    height: .9375rem;
+    width: 1.125rem;
 }
