@@ -49,13 +49,22 @@ questions.forEach((item) => {
         let clickedQuestionId = e.currentTarget.id;
         let icon = document.querySelector(`#${clickedQuestionId} img`);
         let answer = document.querySelector(`#${clickedQuestionId} .answer`);
-        
-        answer.classList.toggle("hidden");
+        closeAllAccordeons();
+        answer.classList.remove("hidden");
         icon.getAttribute("src").includes("icon-arrow.svg")?
             (icon.setAttribute("src","/images/icon-arrow-close.svg"))
             :(icon.setAttribute("src","/images/icon-arrow.svg"));
     })
 });
+
+const closeAllAccordeons = ()=>{
+    questions.forEach(question => {
+        let answer = document.querySelector(`#${question.id} .answer`);
+        let icon = document.querySelector(`#${question.id} img`);
+        answer.classList.add("hidden");
+        icon.setAttribute("src","/images/icon-arrow.svg");
+    });
+}
 
 // Form Submit Validation
 let form = document.getElementById("newsletter-form");
