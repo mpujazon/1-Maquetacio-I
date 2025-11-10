@@ -90,7 +90,7 @@ hr{
     font-size: .9375rem;
     font-weight: 500;
     line-height: 200%;
-    width: 100%;
+    width: fit-content;
 }
 .secondary-button:hover{
     background-color: var(--clr-white);
