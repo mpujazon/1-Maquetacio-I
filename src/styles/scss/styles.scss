@@ -189,7 +189,6 @@ svg:hover{
     align-items: center;
     gap: 1rem;
 }
-
 /* Features Section */
 .features{
     margin-top: 8rem;
@@ -295,7 +294,6 @@ svg:hover{
 #tab1-content h2{
     margin-top: $spacing-500;
 }
-
 /* Download Section */
 .download{
     padding: 0 $spacing-400;
@@ -413,6 +411,7 @@ svg:hover{
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    max-width: 19.4375rem;
     input{
         padding: 0 1rem;
         height: 3rem;
@@ -568,6 +567,7 @@ footer{
     #newsletter-form{
         flex-direction: row;
         justify-content: center;
+        max-width: 27.625rem;
     }
     /* Footer */
     footer{
