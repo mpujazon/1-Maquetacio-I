@@ -121,27 +121,21 @@ svg:hover {
 }
 
 /*Header Styles*/
-.desktop-nav {
-  display: none;
-}
-
 .header-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 2rem;
 }
-
-#header-nav-icon {
-  z-index: 4;
+.header-group .desktop-nav {
+  display: none;
 }
-
-.header #header-nav-icon {
+.header-group #header-nav-icon {
+  z-index: 4;
   height: 0.9375rem;
   width: 1.125rem;
 }
-
-#header-nav-icon:hover {
+.header-group #header-nav-icon:hover {
   cursor: pointer;
 }
 

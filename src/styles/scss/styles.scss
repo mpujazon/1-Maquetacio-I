@@ -73,26 +73,24 @@ svg:hover{
     fill: $clr-red-400;
 }
 /*Header Styles*/
-.desktop-nav{
-    display: none;
-}
 .header-group{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: $spacing-500 $spacing-400;
-}
-#header-nav-icon{
-    z-index: 4;
-}
-.header #header-nav-icon{
-    height: .9375rem;
-    width: 1.125rem;
-}
-#header-nav-icon:hover{
-    cursor: pointer;
-}
 
+    .desktop-nav{
+        display: none;
+    }
+    #header-nav-icon{
+        z-index: 4;
+        height: .9375rem;
+        width: 1.125rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
 /* Nav Styles*/
 #mobile-nav{
     position: absolute;
