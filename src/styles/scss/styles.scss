@@ -583,7 +583,6 @@ footer{
         }
     }
 }
-
 /* Desktop: From 992px viewport width */
 @media (min-width: 62rem){
     /* General Styles */
@@ -603,22 +602,20 @@ footer{
         display: flex;
         align-items: center;
         gap: $spacing-500;
-    }
-    .desktop-nav li{
-        list-style: none;
-    }
-    
-    .desktop-nav a{
-        text-decoration: none;
-        color: $clr-blue-950;
-    }
-
-    .desktop-nav a:hover{
-        color: $clr-red-400;
-    }
-    .desktop-nav .login-btn{
-        color: $clr-white;
-        padding: $spacing-100 $spacing-400;
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: $clr-blue-950;
+            &:hover{
+                color: $clr-red-400;
+            }
+        }
+        .login-btn{
+            color: $clr-white;
+            padding: $spacing-100 $spacing-400;
+        }
     }
     /* Hero Section */
     .hero{
@@ -641,13 +638,13 @@ footer{
         margin: 0;
         padding-left: 8.3125rem;
         align-items: flex-start;
-    }
-    .hero-text h2{
-        text-align: left;
-        margin: 0 4.5rem 0 0;
-    }
-    .hero-text p{
-        text-align: left;
+        h2{
+            text-align: left;
+            margin: 0 4.5rem 0 0;
+        }
+        p{
+            text-align: left;
+        }
     }
     /* Features Section */
     .features-header {
@@ -659,10 +656,10 @@ footer{
     .tab-text{
         align-items: flex-start;
         justify-content: center;
-    }
-    .tab-text h2, .tab-text p{
-        margin: 0;
-        text-align: left;
+        h2, p{
+            margin: 0;
+            text-align: left;
+        }
     }
     #tab1-content, #tab2-content, #tab3-content{
         flex-direction: row;
@@ -681,14 +678,13 @@ footer{
     .tab3-decoration-rectangle{
         left: -8.5625rem;
     }
-
     /* Downloads Section */
     .download-header{
         margin: auto;
         max-width: 33.8125rem;
-    }
-    .download-header h2{
-        max-width: 33.8125rem;
+        h2{
+            max-width: 33.8125rem;
+        }
     }
     .download-navigators{
         gap: $spacing-300;
@@ -722,8 +718,8 @@ footer{
     /* Footer */
     footer{
         justify-content: flex-start;
-    }
-    footer .social-media-links{
-        margin-left: auto;
+        .social-media-links{
+            margin-left: auto;
+        }
     }
 }
