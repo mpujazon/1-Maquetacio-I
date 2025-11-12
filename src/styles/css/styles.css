@@ -471,10 +471,6 @@ svg:hover {
   align-items: center;
   gap: 2rem;
 }
-.newsletter .tertiary-button {
-  width: 100%;
-}
-
 .newsletter h3 {
   color: #FFF;
   font-size: 0.75rem;
@@ -483,9 +479,11 @@ svg:hover {
   letter-spacing: 0.3125rem;
   text-align: center;
 }
-
 .newsletter h2 {
   color: #FFF;
+}
+.newsletter .tertiary-button {
+  width: 100%;
 }
 
 #newsletter-form {
@@ -494,7 +492,6 @@ svg:hover {
   gap: 1rem;
   width: 100%;
 }
-
 #newsletter-form input {
   padding: 0 1rem;
   height: 3rem;
@@ -502,7 +499,6 @@ svg:hover {
   background-color: #FFF;
   border: 0;
 }
-
 #newsletter-form input::placeholder {
   font-family: "Rubik", sans-serif;
   font-size: 0.9375rem;
@@ -510,11 +506,9 @@ svg:hover {
   line-height: 165%;
   color: hsla(0, 0%, 0%, 0.3);
 }
-
 #newsletter-form button {
   font-family: "Rubik", sans-serif;
 }
-
 #newsletter-form .input {
   display: flex;
   flex-direction: column;
@@ -525,14 +519,12 @@ svg:hover {
   flex-direction: column;
   gap: 0.25rem;
 }
-
-#input-group.error {
+#input-group .error {
   padding: 0.125rem;
   background-color: #FA5959;
   border-radius: 0.3125rem;
 }
-
-#input-group.error input {
+#input-group .error input {
   background-image: url(/images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: right 10px top 13px;
