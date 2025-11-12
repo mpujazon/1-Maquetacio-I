@@ -232,7 +232,7 @@ svg:hover{
     gap: $spacing-300;
     align-items: center;
 }
-.tab-illustration-container {
+.tab-illustration-container{
     position: relative;
     width: 100%;
 }
@@ -330,12 +330,11 @@ svg:hover{
     flex-direction: column;
     align-items: center;
     gap: $spacing-400;
+    img{
+        width: 6.25rem;
+        height: 6.25rem;
+    }
 }
-.navigator-info img{
-    width: 6.25rem;
-    height: 6.25rem;
-}
-
 /* FAQ Section */
 .faq{
     padding: 0 $spacing-400;
