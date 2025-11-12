@@ -16,7 +16,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/styles/scss:dist/css"
+    "sass": "sass --watch src/styles/scss:src/styles/css"
   },
   "dependencies": {
     "sass": "^1.94.0"
