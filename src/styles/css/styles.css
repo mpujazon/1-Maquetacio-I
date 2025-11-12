@@ -624,7 +624,7 @@ footer a:hover {
     padding: 1rem 0.5rem;
   }
   .navigator-card img {
-    width: 100%;
+    width: 100px;
   }
   .navigator-info {
     gap: 0.5rem;

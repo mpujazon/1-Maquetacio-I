@@ -509,9 +509,9 @@ footer{
     }
     .hero-text{
         margin: 0 7.75rem;
-    }
-    .hero-text h2{
-        margin: 0 2rem;
+        h2{
+            margin: 0 2rem;
+        }
     }
     /* Features Section */
     .features-header{
@@ -525,9 +525,11 @@ footer{
     #tab1-content h2{
         margin-top: $spacing-1500;
     }
-    .tab-content h2, .tab-content p{
-        margin: 0 $spacing-1500;
-    } 
+    .tab-content{
+        h2, p{
+            margin: 0 $spacing-1500;
+        }
+    }
     /* Download Section */
     .download-header{
         margin: 0 $spacing-1500;
@@ -541,18 +543,17 @@ footer{
         max-width: 14rem;
         gap: $spacing-200;
         padding: $spacing-200 $spacing-100;
-    }
-    .navigator-card img{
-        width: 100%;
+        img{
+            width: 100px;
+        }
     }
     .navigator-info{
         gap: $spacing-100;
+        img{
+            width: 4.375rem;
+            height: 4.375rem;
+        }
     }
-    .navigator-info img{
-        width: 4.375rem;
-        height: 4.375rem;
-    }
-
     /* FAQ Section */
     .faq{
         padding: 0 $spacing-1500;
@@ -560,7 +561,6 @@ footer{
     .faq-accordeon-group{
         width: 100%;
     }
-
     /* Newsletter Section */
     .newsletter{
         padding: 3.0625rem 10rem;
@@ -569,19 +569,18 @@ footer{
         flex-direction: row;
         justify-content: center;
     }
-
     /* Footer */
     footer{
         flex-direction: row;
         justify-content: space-between;
         padding: 2rem 5rem;
-    }
-    footer ul{
-        flex-direction: row;
-        gap: $spacing-300;
-    }
-    footer .social-media-links{
-        gap: $spacing-300;
+        ul{
+            flex-direction: row;
+            gap: $spacing-300;
+        }
+        .social-media-links{
+            gap: $spacing-300;
+        }
     }
 }
 
