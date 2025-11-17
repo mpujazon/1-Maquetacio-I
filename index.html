@@ -52,64 +52,64 @@
         <section>
             <div class="relative">
                 <img class="scale-90 mx-auto" src="src/images/illustration-hero.svg" alt="Hero Illustration">
-                <!-- <img class="absolute top-20 right-0 -z-10  pointer-events-none" src="src/images/rectangle.png" alt="Decoration rectangle"> -->
+                <img class="absolute bottom-0 -right-4 -z-10  pointer-events-none scale-90 min-[445px]:scale-150 min-[27.8125rem]:bottom-12" src="src/images/rectangle.png" alt="Decoration rectangle">
             </div>
-            <div class="flex flex-col items-center justify-center gap-6 text-center max-w-80 mx-auto">
+            <div class="flex flex-col items-center justify-center gap-6 text-center w-4/5 max-w-80 mx-auto">
                 <h2 class="font-medium text-3xl">A Simple Bookmark Manager</h2>
-                <p class="text-[var(--clr-grey-500)]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <p class="text-[var(--clr-grey-600)]">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="flex gap-4">
-                    <a class="bg-[var(--clr-blue-600)] text-white p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">Get it on Chrome</a>
-                    <a class="bg-[var(--clr-grey-50)] p-3 rounded-md hover:bg-white hover:text-[var(--clr-grey-500)] hover:outline hover:outline-2 hover:outline-[var(--clr-grey-500)] -outline-offset-2" href="#">Get it on Firefox</a>
+                    <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">Get it on Chrome</a>
+                    <a class="bg-[var(--clr-grey-50)] font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-grey-500)] hover:outline hover:outline-2 hover:outline-[var(--clr-grey-500)] -outline-offset-2" href="#">Get it on Firefox</a>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="flex flex-col items-center justify-center gap-6 text-center w-4/5 max-w-80 mx-auto">
+            <div class="flex flex-col items-center justify-center gap-6">
                 <h2 class="text-center font-medium text-3xl">Features</h2>
-                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                <p class="text-[var(--clr-grey-600)]">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
-            <div>
-                <ul>
-                    <hr class="bg#97979700)] border-none h-[.075re40 opacity-90">
-                    <li>Simple Bookmarking</li>
-                    <hr class="bg#97979700)] border-none h-[.075re40 opacity-90">
-                    <li>Speedy Searching</li>
-                    <hr class="bg#97979700)] border-none h-[.075re40 opacity-90">
-                    <li>Easy Sharing</li>
-                    <hr class="bg#97979700)] border-none h-[.075re40 opacity-90">
+            <div class="flex flex-col gap-8">
+                <ul class="features-tabs flex flex-col items-center">
+                    <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50">
+                    <li id="tab1" class="selected py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Simple Bookmarking</li>
+                    <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50">
+                    <li id="tab2" class="py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Speedy Searching</li>
+                    <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50">
+                    <li id="tab3" class="py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Easy Sharing</li>
+                    <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50">
                 </ul>
-                <div>
-                    <div>
+                <div class="features-content">
+                    <div id="tab1-content" class="tab-content flex flex-col gap-8 w-full max-w-80 mx-auto">
                         <div>
-                            <img src="src/images/illustration-features-tab-1.svg" alt="Feature Illustration">
+                            <img class="scale-90" src="src/images/illustration-features-tab-1.svg" alt="Feature Illustration">
                             <!-- <img src="src/images/rectangle.png" alt="Decoration rectangle"> -->
                         </div>
-                        <div>
-                            <h2>Bookmark in one click</h2>
-                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                            <a href="#">More info</a>
+                        <div class="flex flex-col gap-4 items-center">
+                            <h2 class="text-center font-medium text-3xl">Bookmark in one click</h2>
+                            <p class="text-[var(--clr-grey-600)]">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md w-fit hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
                         </div>
                     </div>
-                    <div>
+                    <div id="tab2-content" class="tab-content hidden flex flex-col gap-8 w-full max-w-80 mx-auto">
                         <div>
-                            <img src="src/images/illustration-features-tab-2.svg" alt="Feature Illustration">
+                            <img class="scale-90" src="src/images/illustration-features-tab-2.svg" alt="Feature Illustration">
                             <!-- <img src="src/images/rectangle.png" alt="Decoration rectangle"> -->
                         </div>
-                        <div>
-                            <h2>Intelligent search</h2>
-                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                            <a href="#">More info</a>
+                        <div class="flex flex-col gap-4 items-center">
+                            <h2 class="text-center font-medium text-3xl">Intelligent search</h2>
+                            <p class="text-[var(--clr-grey-600)]">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
                         </div>
                     </div>
-                    <div>
+                    <div id="tab3-content" class="tab-content hidden flex flex-col gap-8 w-full max-w-80 mx-auto">
                         <div>
-                            <img src="src/images/illustration-features-tab-3.svg" alt="Feature Illustration">
+                            <img class="scale-90" src="src/images/illustration-features-tab-3.svg" alt="Feature Illustration">
                             <!-- <img src="src/images/rectangle.png" alt="Decoration rectangle"> -->
                         </div>
-                        <div>
-                            <h2>Share your bookmarks</h2>
-                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                            <a href="#">More info</a>
+                        <div class="flex flex-col gap-4 items-center">
+                            <h2 class="text-center font-medium text-3xl">Share your bookmarks</h2>
+                            <p class="text-[var(--clr-grey-600)]">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
                         </div>
                     </div>
                 </div>

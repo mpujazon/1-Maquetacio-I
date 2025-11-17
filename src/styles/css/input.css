@@ -17,3 +17,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.selected{
+    border-bottom: .25rem solid var(--clr-red-400);
+    color: var(--clr-blue-950);
+}
