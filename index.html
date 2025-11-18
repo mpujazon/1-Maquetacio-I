@@ -121,7 +121,7 @@
                 <h2 class="text-center font-medium text-3xl">Download the extension</h2>
                 <p class="text-[var(--clr-grey-600)]">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-10 w-full">
                 <div class="flex flex-col gap-6 items-center justify-center shadow-md rounded-2xl">
                     <div class="flex flex-col items-center gap-6">
                         <img class="w-[100px]" src="src/images/logo-chrome.svg" alt="Chrome logo">
@@ -151,29 +151,29 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="flex flex-col items-center justify-center gap-10 text-center w-4/5 max-w-80 mx-auto">
+            <div class="flex flex-col gap-4">
                 <h2 class="text-center font-medium text-3xl">Frequently Asked Questions</h2>
-                <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+                <p class="text-[var(--clr-grey-600)]">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
             </div>
-            <div>
-                <div>
-                    <div>
+            <div class="flex flex-col gap-4 text-left">
+                <div id="question1" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center gap-1 hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>What is Bookmark?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p>
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
                     </p>
                 </div>
                 <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
-                <div>
-                    <div>
+                <div id="question2" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>How can I request a new browser?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p>
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         ivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
                         Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                         ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
@@ -181,31 +181,31 @@
                     </p>
                 </div>
                 <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
-                <div>
-                    <div>
+                <div id="question3" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>Is there a mobile app?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p>
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                         urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                         sollicitudin ex et ultricies bibendum.
                     </p>
                 </div>
                 <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
-                <div>
-                    <div>
+                <div id="question4" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center gap-2 hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>What about other Chromium browsers?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p>
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                         vitae neque eget nisl gravida pellentesque non ut velit.
                     </p>
                 </div>
                 <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
             </div>
-            <a href="#">More Info</a>
+            <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md mb-6 hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More Info</a>
         </section>
         <section>
             <div>

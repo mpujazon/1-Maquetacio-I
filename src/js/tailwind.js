@@ -49,25 +49,31 @@ let questions = document.querySelectorAll(".question");
 questions.forEach((item) => {
     item.addEventListener("click", (e)=>{
         let clickedQuestionId = e.currentTarget.id;
-        let icon = document.querySelector(`#${clickedQuestionId} img`);
         let answer = document.querySelector(`#${clickedQuestionId} .answer`);
-        closeAllAccordeons();
-        answer.classList.remove("hidden");
-        icon.getAttribute("src").includes("icon-arrow.svg")?
-            (icon.setAttribute("src","src/images/icon-arrow-close.svg"))
-            :(icon.setAttribute("src","src/images/icon-arrow.svg"));
+        let answerIsOpen = !answer.classList.contains("hidden");
+
+        closeAllAnswers();
+        answerIsOpen? closeAnswer(item) : openAnswer(item);
     })
 });
 
-const closeAllAccordeons = ()=>{
-    questions.forEach(question => {
-        let answer = document.querySelector(`#${question.id} .answer`);
-        let icon = document.querySelector(`#${question.id} img`);
-        answer.classList.add("hidden");
-        icon.setAttribute("src","src/images/icon-arrow.svg");
-    });
+const openAnswer = (question) => {
+    let answer = document.querySelector(`#${question.id} .answer`);
+    let icon = document.querySelector(`#${question.id} img`);
+    answer.classList.remove("hidden");
+    icon.setAttribute("src","src/images/icon-arrow-close.svg");
 }
-
+const closeAnswer = (question) => {
+    let answer = document.querySelector(`#${question.id} .answer`);
+    let icon = document.querySelector(`#${question.id} img`);
+    answer.classList.add("hidden");
+    icon.setAttribute("src","src/images/icon-arrow.svg");
+}
+const closeAllAnswers = () => {
+    questions.forEach(question=>{
+        closeAnswer(question);
+    })
+}
 // Form Submit Validation
 let form = document.getElementById("newsletter-form");
 let inputGroup = document.getElementById("input-group");
