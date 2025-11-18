@@ -707,6 +707,10 @@ video {
   max-width: 20rem;
 }
 
+.max-w-\[280px\]{
+  max-width: 280px;
+}
+
 .scale-90{
   --tw-scale-x: .9;
   --tw-scale-y: .9;
