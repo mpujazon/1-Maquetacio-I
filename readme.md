@@ -1,17 +1,24 @@
 # Sprint 1. Maquetació I
 
-## 📄 Descripció
-L'objectiu d'aquest exercici és comprendre i fer servir les diferents tecnologies que hi ha per a maquetar pàgines web. Per tant, l'sprint es divideix en 3 iteracions:
-- Implementació 1: Vanilla (HTML + CSS + JS)
-- Implementació 2: Preprocessadors (SASS)
-- Implementació 3: Lliberies d'estils (Tailwind)
+## 📄 Description
+The goal of this exercise is to understand and use different technologies available for web page layout. Therefore, the sprint is divided into 3 iterations:
+- Implementation 1: Vanilla (HTML + CSS + JS)
+- Implementation 2: Preprocessors (SASS)
+- Implementation 3: Style Libraries (Tailwind)
 
-Per fer-ho es disposa d'un disseny el qual s'ha de replicar durant cada iteració amb la tecnologia adeqüada.
+To do this, a design is provided which must be replicated during each iteration with the appropriate technology.
 
-### Captura de pantalla
-![Project Deployed Screenshot](src/images/screenshot.png)
+### Screenshot
+![Project Deployed Screenshot](./src/images/screenshot.png)
 
-## 💻 Tecnologies Utilitzades
+## 📁 Files
+    S1.Maquetació-1
+    ├── images/
+    ├── index.html
+    ├── style.css
+    ├── main.js
+    └── readme.md
+## 💻 Technologies
 
 - HTML
 - CSS
@@ -19,37 +26,43 @@ Per fer-ho es disposa d'un disseny el qual s'ha de replicar durant cada iteraci�
 - SASS
 - TailwindCSS
 
-## 📋 Requisits
+## 📋 Requirements
 
 - Node.js v25.1.0
 - NPM v11.6.2
 - SASS v1.94.0
 - TailwindCSS v3.4.18
 
-## 🛠️ Instal·lació
+## 🛠️ Installation
 
-Clona aquest repositori: -> `git clone`
+Clone this repository: `git clone`
 
-Accedeix al directori del projecte:   `cd 1-Maquetació-I`
+Navigate to the project directory: `cd 1-Maquetació-I`
 
-Instal·la les dependències:   `npm install`
+Install dependencies: `npm install`
 
-## ▶️ Execució
+## ▶️ Execution
 
-Es pot fer servir Live Server per a desplegar localment el projecte.
+You can use Live Server to deploy the project locally.
 
-## 🌐 Desplegament
-Es pot accedir al desplegament des de [GitHub Pages](mpujazon.github.io/1-Maquetacio-I/)
+## 🌐 Deployment
+The deployed site is available at [GitHub Pages](https://mpujazon.github.io/1-Maquetacio-I/)
 
-## 🤝 Contribucions
+## 💭 Difficulties
+Although this was a simple project, I struggled to position the decorative background elements. I realized the issue originated in the first phase because I didn't structure the HTML with the styling requirements in mind. I also had problems with image source paths: images appeared locally but were missing after deployment to GitHub Pages. I fixed this by using relative paths.
 
-Les contribucions són benvingudes! Per favor, segueix els següents passos per a contribuir:
+## 🧠 What I've learned
+I improved my layout and HTML-structuring skills, practiced debugging asset paths for deployment, and gained confidence working with SASS and Tailwind.
 
-- Fes un fork del repositori
-- Crea una nova branca   `git checkout -b feature/NovaFuncionalitat`
+## 🤝 Contributions
 
-- Fes els teus canvis i commiteja'ls:   `git commit -m 'Afegeix Nova Funcionalitat'`
+Contributions are welcome! Please follow these steps to contribute:
 
-- Puja els canvis a la teva branca:   `git push origin feature/NovaFuncionalitat`
+- Fork the repository
+- Create a new branch: `git checkout -b feature/NewFeature`
 
-- Fes un pull request
+- Make your changes and commit them: `git commit -m 'Add New Feature'`
+
+- Push the changes to your branch: `git push origin feature/NewFeature`
+
+- Create a pull request
