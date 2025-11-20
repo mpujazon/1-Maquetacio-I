@@ -12,6 +12,8 @@ const toggleMobileNav = () => {
         :(headerNavIcon.setAttribute("src","/images/icon-hamburger.svg"));
 }
 
+headerNavIcon.addEventListener("click", toggleMobileNav);
+
 // Tab Interactivity
 let featuresTabs = document.querySelectorAll(".features-tabs li");
 let featuresContent = document.querySelectorAll(".features-content .tab-content");
@@ -70,7 +72,6 @@ const closeAllAccordeons = ()=>{
 let form = document.getElementById("newsletter-form");
 let inputGroup = document.getElementById("input-group");
 let inputTooltip = document.getElementById("input-tooltip");
-let errorIcon = 
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -87,6 +88,6 @@ form.addEventListener("submit", (e)=>{
 });
 
 const validEmail = (input) => {
-    if (input.includes("@")) return true;
-    return false;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(input);
 }
